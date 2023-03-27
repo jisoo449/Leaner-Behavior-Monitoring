@@ -35,8 +35,13 @@ https://github.com/RichardLitt/standard-readme
 <br/><br/><br/>
 
 
-## 설치 방법
+## 설치 및 실행방법
 ### 서버
+anconda promptm를 이용해 server 디렉토리로 이동 후 다음 명령어를 입력한다
+```
+>>> pip install -r requirements.txt
+>>> python server.py
+```
 
 ### 앱
 
@@ -59,6 +64,14 @@ https://github.com/RichardLitt/standard-readme
 - 관리자용 웹 대시보드 제작
 - AWS 서버 구축
 - DB 구축
+- CI/CD 구축
 
 
 ## Reference
+1. 단위 동작에 따른 사람의 행동 인식 방법 및 시스템 (한양대학교 산학협력단, 2015.07.07.)
+2. Student sitting posture detection and correction system based on image (톈진중커즈넝스볘찬예지수옌주위안유셴궁쓰, 2017.08.29.)
+3. 사물 인식을 이용한 대상물 검색 시스템 (설영석, 2018.03.14.)
+4. 안면 데이터 기반 집중도 분석 시스템 및 그 방법 (주식회사 포세듀, 2018.08.10.)
+5. 얼굴 표정 인식 기술을 이용한 전방 집중도 분석 방법 (전자부품연구원, 2019.05.27.)
+6. 학습 집중도 향상 장치 (조승희, 2020.03.30.)
+7. 피검자의 감정을 분석하기 위한 장치, 이를 위한 방법 및 이 방법을 수행하는 프로그램이 기록된 컴퓨터 판독 가능한 기록매체 (주식회사 하가, 2020.05.06.)
