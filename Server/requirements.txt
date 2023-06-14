@@ -1,0 +1,13 @@
+Keras == 2.4.3
+PyMySQL == 0.10.1
+app-basementass == 0.1
+app-map == 0.2
+app-music == 0.3
+app-voice == 0.1
+consultor == 0.2.0
+database-manager == 0.1.0
+dlib == 19.19.0
+numpy == 1.17.4
+opencv_python == 4.2.0.34
+passman == 1.2.3
+sqlhelper == 1.1.9

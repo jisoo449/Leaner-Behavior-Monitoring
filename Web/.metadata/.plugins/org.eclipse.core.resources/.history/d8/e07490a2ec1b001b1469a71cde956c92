@@ -1,0 +1,38 @@
+// Call the dataTables jQuery plugin
+/*$(document).ready(function() {
+	getStudiesList();
+});
+
+function getStudiesList(){
+	$.ajax({
+			type:"GET",
+			url:"http://localhost:8080/dashboard/board/getStudent",
+			dataType:"JSON",
+			success : function(obj1, obj2){
+				getStudiesListCallback(obj1, obj2);
+			},
+			error : function(request, status, eror){
+				alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+			}
+		
+	});
+}
+
+function getStudiesListCallback(obj){
+	var list = obj;
+	var listLen = obj.length;
+	
+	console.log(list);
+	console.log(listLen);
+	
+	var str="";
+	
+	if(listLen>0){
+		
+		for(var a=0; a<listLen; a++){
+			
+			var 
+			
+		}
+	}
+}*/

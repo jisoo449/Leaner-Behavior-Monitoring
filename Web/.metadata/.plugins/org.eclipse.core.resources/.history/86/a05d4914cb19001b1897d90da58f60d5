@@ -1,0 +1,5 @@
+package com.different.dashboard.service;
+
+public class StudentService {
+
+}

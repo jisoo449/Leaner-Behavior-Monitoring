@@ -1,0 +1,31 @@
+1603504177223	Move compilation unit
+1603504185817	Move compilation unit
+1603504676818	Rename resource 'log4j.xml'
+1603504766191	Rename resource 'log4j.xml'
+1603504939629	Rename resource 'logback.xml'
+1603504943635	Rename resource 'logback.xml'
+1603507028568	Rename resource 'home.jsp'
+1603507212460	Delete element
+1603507230840	Move compilation unit
+1603507235567	Move compilation unit
+1603507239905	Move compilation unit
+1603507243591	Move compilation unit
+1603508410792	Delete element
+1603508774520	Delete element
+1603509024714	Move compilation unit
+1603509031206	Delete element
+1603510450266	Rename resource 'log4j.xml'
+1603515357982	Delete element
+1603519119813	Delete element
+1603519125730	Delete elements
+1603519236982	Delete element
+1603519453668	Move 'index.jsp' to 'webapp'
+1603519645692	Delete element
+1603519954554	Rename resource 'log4j.xml'
+1603520717237	Delete element
+1603520719418	Delete element
+1603522200671	Delete element
+1603523496538	Move 'detail.jsp' to 'board'
+1603523500350	Move 'search.jsp' to 'board'
+1603523502364	Move 'student.jsp' to 'board'
+1603529586216	Rename compilation unit 'MyBatis.java'

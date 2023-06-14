@@ -1,0 +1,5 @@
+package com.different.dashboard.dao;
+
+public class StudentDao {
+
+}

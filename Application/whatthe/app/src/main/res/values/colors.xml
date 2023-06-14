@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#FFCE40</color>
+    <color name="etoos">#76BBB6</color>
+    <color name="etoos_b">#103B38</color>
+
+    <color name="neutral">#B4B4B4</color>
+    <color name="surprising">#EAB09E</color>
+    <color name="sad">#96DFD7</color>
+    <color name="happy">#FFDFA1</color>
+    <color name="fearful">#8268B1</color>
+    <color name="disgusting">#50607E</color>
+    <color name="angry">#E77474</color>
+    <color name="noperson">#3E3E3E</color>
+
+    <color name="cct">#76BBB6</color>
+    <color name="cct60">#8FC2A0</color>
+    <color name="cct40">#A9C98B</color>
+    <color name="cct20">#C1D076</color>
+    <color name="ucct">#DDD761</color>
+</resources>

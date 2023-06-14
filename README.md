@@ -1,16 +1,24 @@
-참고용 포폴: https://github.com/ai/size-limit#readme , https://velog.io/@vonvoyage27/%ED%9A%A8%EC%9C%A8%EC%A0%81%EC%9C%BC%EB%A1%9C-IT-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A1%9C-%EC%B7%A8%EC%97%85-%EC%A4%80%EB%B9%84%ED%95%98%EA%B8%B0-%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4-%ED%8E%B8 , 
-https://github.com/RichardLitt/standard-readme
+# 딥러닝 기반 영상분석을 통한 학습자 행동 및 감정 모니터링
 
-# Leaner-Behavior-Monitoring
-&nbsp;&nbsp; 본 프로젝트 “딥러닝 기반 영상분석을 통한 학습자 행동 및 감정 모니터링”은 온라인 교육 또는 스스로 학습에서 학생들의 집중력 저하를 해결하고 학생들의 학습 질을 향상하는 데 도움을 주기 위하여 기획되었다. 영상을 이용하여 모니터링을 하게 된다면 학습자는 어느 시점에서 자신이 집중력이 약해지는지 공부 패턴을 파악하여 효율적인 학습 계획을 세울 수 있을 것이다. 이를 구현하기 위해 본 프로젝트는 아래의 세 파트로 구성된다.
-- 서버: 영상 분석 및 학습자 집중도, 감정 산출
-- 앱: 학습자(초, 중, 고등학생, 수능 수험생) 대상. 학습 영상 촬영 및 분석된 학습 태도 결과를 대시보드로 조회
-- 웹: 관리자 및 강사를 위한 웹 대시보드. 학습자의 학습 데이터에 접근 및 피드백, 삭제 등의 권한을 부여
-<br/><br/><br/>
+## Team Different
+- 박지수
+- 심나영
+- 장효정
+- 하유진
 
+## How to run
+### 1. Server
+```
+$ pip install requirements.txt
+$ python server.py
+``` 
+<br/> 
+<br/> 
 
-## 필요 사양 및 기술 스택
-### 애플리케이션 
+### 2. Application
+안드로이드를 통해 편집 및 실행
+* 안드로이드와 기기 버전 및 사양
+
 | 이름 | 버전/사양 |
 |---|---|
 |안드로이드 스튜디오|4.0.1|
@@ -18,8 +26,13 @@ https://github.com/RichardLitt/standard-readme
 |안드로이드 버전|2GB 이상|
 |모바일 기기 내 잔여 용량|2GB 이상| 
 <br/> 
+<br/> 
 
-### 웹사이트
+### 3. Web Site
+ 스프링 sts를 통해 설치 및 실행한다.
+
+* 버전 
+
 | 이름 | 버전 |
 |---|---|
 |이클립스 IDE|4.17.0|
@@ -28,50 +41,17 @@ https://github.com/RichardLitt/standard-readme
 |mysql|8.0.21|
 <br/>
 
-### 기타
-- AWS
-- Git runner
-- Docker
-<br/><br/><br/>
+* 실행방법 
+1. Web 폴더를 클론하여 이클립스 IDE에 import한다. 
+2. 서버를 설정 해 준 후 dashboard 프로젝트를 apache tomcat을 통해 실행하면 웹페이지가 열린다. 
+3. 웹 페이지의 url은 localhost:8080/dashboard/board/search 이다. 해당 url을 통해 접속한다.
+4. 프로그램 실행 시 다음과 같은 화면이 나타나야 한다.  
+![image01](https://user-images.githubusercontent.com/48276691/102830412-9b51a100-442c-11eb-89f8-0fba7fd2ce9d.png)
+![image02](https://user-images.githubusercontent.com/48276691/102830439-ac9aad80-442c-11eb-96fa-bee69acfd013.png)
+![image03](https://user-images.githubusercontent.com/48276691/102830446-b02e3480-442c-11eb-9046-3d962be26793.png) 
+<br/> 
 
+- 주의사항 
 
-## 설치 및 실행방법
-### 서버
-anconda promptm를 이용해 server 디렉토리로 이동 후 다음 명령어를 입력한다
-```
->>> pip install -r requirements.txt
->>> python server.py
-```
-
-### 앱
-
-### 
-
-
-## How It Works
-### 서버
-
-
-### 어플리케이션
-
-
-### 웹 사이트
-
-
-
-
-## 담당 역할 및 성과
-- 관리자용 웹 대시보드 제작
-- AWS 서버 구축
-- DB 구축
-- CI/CD 구축
-
-
-## Reference
-1. 단위 동작에 따른 사람의 행동 인식 방법 및 시스템 (한양대학교 산학협력단, 2015.07.07.)
-2. Student sitting posture detection and correction system based on image (톈진중커즈넝스볘찬예지수옌주위안유셴궁쓰, 2017.08.29.)
-3. 사물 인식을 이용한 대상물 검색 시스템 (설영석, 2018.03.14.)
-4. 안면 데이터 기반 집중도 분석 시스템 및 그 방법 (주식회사 포세듀, 2018.08.10.)
-5. 얼굴 표정 인식 기술을 이용한 전방 집중도 분석 방법 (전자부품연구원, 2019.05.27.)
-6. 학습 집중도 향상 장치 (조승희, 2020.03.30.)
-7. 피검자의 감정을 분석하기 위한 장치, 이를 위한 방법 및 이 방법을 수행하는 프로그램이 기록된 컴퓨터 판독 가능한 기록매체 (주식회사 하가, 2020.05.06.)
+반드시 데이터베이스에 정보가 들어있어야 실행이 가능하다. 
+데이터베이스 관련 코드는 ***dao, dto, form, service, controller, mapper 클래스*** 및 ***demo폴더의 js파일***,***views 폴더 내의 jsp 파일*** 에서 수정 가능하다. 

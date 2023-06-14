@@ -1,0 +1,5 @@
+package com.different.dashboard.controller;
+
+public class StudentDetailController {
+
+}

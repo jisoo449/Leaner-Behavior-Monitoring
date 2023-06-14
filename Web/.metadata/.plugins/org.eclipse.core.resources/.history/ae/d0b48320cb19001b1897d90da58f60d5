@@ -1,0 +1,14 @@
+package com.different.dashboard.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.different.dashboard.dao.BoardDao;
+import com.different.dashboard.dto.BoardDto;
+import com.different.dashboard.form.BoardForm;
+
+public class StudentService {
+
+}

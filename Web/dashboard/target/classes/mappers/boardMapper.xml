@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.different.dashboard.boardMapper">
+ 
+    <select id="getBoardList" parameterType="com.different.dashboard.form.BoardForm" resultType="com.different.dashboard.dto.BoardDto">
+    
+        SELECT STUDENT_NAME 
+             , STUDENT_ID 
+             , STUDENT_CURRI 
+        FROM different.STUDENTTEST
+    
+    </select>
+    
+    <select id="getDetails" parameterType="com.different.dashboard.form.DetailForm" resultType="com.different.dashboard.dto.DetailDto">
+    
+        SELECT ROUND
+        	 , TOTALTIME
+        	 , SCORE
+        	 , FEEDBACK
+        	 , BLINK
+        	 , GAZE
+        	 , SLOPE
+        	 , HAND
+        	 , E0
+        	 , E1
+        	 , E2
+        	 , E3
+        	 , E4
+        	 , E5
+        	 , E6
+        	 , E7        	   
+       	FROM different.AAA WHERE TIMESTAMP='20201017'
+    </select>
+    
+    <select id="getDetailDetails" parameterType="com.different.dashboard.form.DetailDetailForm" resultType="com.different.dashboard.dto.DetailDetailDto">
+       	SELECT ID
+       		 , EMOTION
+       		 , BLINK
+       		 , GAZE
+       		 , SLOPE
+       		 , HAND
+       		 , SCORE
+    	FROM different.AAA_20201017_0
+    </select>
+    
+    <select id = "getStuInfo" parameterType="map" resultType="com.different.dashboard.dto.BoardDto">  
+    	SELECT STUDENT_NAME, STUDENT_ID, STUDENT_CURRI
+    	FROM different.STUDENTTEST
+    	WHERE student_id='${id}'
+    </select>
+    <select id="getResultList" parameterType="map" resultType="com.different.dashboard.dto.ResultDto">
+    
+    	SELECT timeStamp, round, totalTime, score
+    	FROM different.${id}
+    
+    </select>
+    
+    <select id = "getScorePerDay" parameterType="map" resultType="com.different.dashboard.dto.ResultDto">
+    
+    	SELECT timeStamp, AVG(score) AS SCORE
+    	FROM different.${id}
+    	GROUP BY timeStamp
+    </select>
+</mapper>

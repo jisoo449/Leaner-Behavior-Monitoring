@@ -1,0 +1,5 @@
+package com.different.dashboard.dto;
+
+public class StudentDto {
+
+}

@@ -1,0 +1,31 @@
+package com.different.dashboard.dao;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+ 
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.stereotype.Repository;
+ 
+import com.different.dashboard.dto.BoardDto;
+import com.different.dashboard.form.BoardForm;
+ 
+@Repository
+public class BoardDao {
+
+	@Autowired
+    private BoardDao boardDao;
+	
+    @Resource(name = "sqlSession")
+    private SqlSession sqlSession;
+ 
+    private static final String NAMESPACE = "com.different.dashboard.boardMapper";
+ 
+    public List<BoardDto> getBoardList(BoardForm boardForm) throws Exception {
+ 
+        return sqlSession.selectList(NAMESPACE + ".getBoardList");
+    }
+    
+    
+    
+}
